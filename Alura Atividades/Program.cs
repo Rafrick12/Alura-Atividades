@@ -1,10 +1,18 @@
-﻿Console.Write("Digite um numero qualquer: ");
-int numero = int.Parse(Console.ReadLine()!);
+﻿int resp = 7;
 
-if( numero % 2 != 0)
+Console.Write("Tente advinhar o numero secreto de 0 a 10: ");
+int chute = int.Parse(Console.ReadLine()!);
+
+if(chute >= 0 && chute <= 10)
 {
-    Console.WriteLine("O número digitado é impar");
-}else
+    if(chute == resp)
+    {
+        Console.WriteLine("\nParabens você acertou");
+    }
+    else { Console.WriteLine("\nVocê errou =(");
+    }
+}
+else
 {
-    Console.WriteLine("O numero digitado e par");
+    Console.WriteLine("\nNumero invalido!!");
 }
