@@ -1,9 +1,9 @@
 ﻿int resp = 7;
 
-Console.Write("Tente advinhar o numero secreto de 0 a 10: ");
+Console.Write("Tente advinhar o numero secreto de 0 a 100: ");
 int chute = int.Parse(Console.ReadLine()!);
 
-if(chute >= 0 && chute <= 10)
+if(chute >= 0 && chute <= 100)
 {
     if(chute == resp)
     {
